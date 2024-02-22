@@ -1,8 +1,8 @@
 {
-    "/js/core.js": "/js/core.js?id=a3eeec3b498433d6801e00170a85642d",
-    "/js/manifest.js": "/js/manifest.js?id=dcdfb222679beb7b4fd397a8b8103811",
-    "/css/core.css": "/css/core.css?id=557e62a4e77588d516904ec9d0c728af",
-    "/css/fontawesome.css": "/css/fontawesome.css?id=a11f3796b15bb5887d0fbc6660d1f0b6",
-    "/css/dropzone.css": "/css/dropzone.css?id=58e00598c127b8601d61a033e7b9dea3",
-    "/js/vendor.js": "/js/vendor.js?id=9bd94d2ed6d8118462531276c47b1751"
+    "/js/core.js": "/js/core.js",
+    "/js/manifest.js": "/js/manifest.js",
+    "/css/core.css": "/css/core.css",
+    "/css/fontawesome.css": "/css/fontawesome.css",
+    "/css/dropzone.css": "/css/dropzone.css",
+    "/js/vendor.js": "/js/vendor.js"
 }

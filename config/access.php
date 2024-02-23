@@ -21,7 +21,7 @@ return [
         'change_email' => env('CHANGE_EMAIL', false),
 
         // The name of the super administrator role
-        'app_admin_role' => 'App Admin',
+        'app_admin_role' => 'ADMINISTRATOR',
 
         //The role name of super admin for brand
         'brand_admin_role' => 'Tenant Admin',

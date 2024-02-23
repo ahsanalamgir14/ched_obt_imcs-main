@@ -30,7 +30,9 @@ class PermissionRoleTableSeeder extends Seeder
                 'is_admin' => 1,
                 'type_id' => Type::findByAlias('app')->id,
                 'created_by' => $superAdmin->id,
-                'is_default' => 1
+                'is_default' => 1,
+                'description'=>'System Administrator',
+                'status'=>'ENABLED'
             ]
         ];
 

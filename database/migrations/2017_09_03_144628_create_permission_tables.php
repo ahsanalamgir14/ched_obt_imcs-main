@@ -1,7 +1,8 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
 class CreatePermissionTables extends Migration
 {
@@ -16,6 +17,8 @@ class CreatePermissionTables extends Migration
             $table->boolean('is_admin')->default(0);
             $table->boolean('is_default')->default(0);
             $table->foreignId('type_id')->nullable()->references('id')->on('types')->onDelete('SET NULL');
+            $table->string('description')->nullable();
+            $table->string('status')->default('ENABLED'); //enabled, disabled
             $table->unsignedBigInteger('created_by')->nullable();
             $table->timestamps();
 

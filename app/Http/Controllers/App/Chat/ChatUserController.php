@@ -16,7 +16,7 @@ class ChatUserController extends Controller
             $query->orderByDesc('messages.created_at');
         }])
                     ->where('id', '!=', auth()->id())
-                    ->select('id', 'first_name', 'last_name', 'email')
+                    ->select('id', 'first_name', 'last_name', 'username', 'email')
                     ->get();
     }
 }

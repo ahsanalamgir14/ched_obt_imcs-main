@@ -24,6 +24,11 @@ class UserFilter extends FilterBuilder
         $this->whereClause('last_name', "%{$last_name}%", 'LIKE');
     }
 
+    public function userName($username = null)
+    {
+        $this->whereClause('username', "%{$username}%", 'LIKE');
+    }
+
     public function email($email = null)
     {
         $this->whereClause('email', "%{$email}%", 'LIKE');

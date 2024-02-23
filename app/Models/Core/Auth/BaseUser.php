@@ -26,6 +26,7 @@ abstract class BaseUser extends Authenticatable
     protected $fillable = [
         'first_name',
         'last_name',
+        'username',
         'email',
         'password',
         'active',

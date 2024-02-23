@@ -39,6 +39,7 @@ class UserService extends BaseService
         parent::save($this->getFillAble(array_merge(request()->only(
             'first_name',
             'last_name',
+            'username',
             'email',
             'password'
         ), $attributes)));

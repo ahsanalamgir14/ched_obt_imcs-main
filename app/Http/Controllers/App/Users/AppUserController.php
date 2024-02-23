@@ -24,6 +24,6 @@ class AppUserController extends BaseUserController
                     ->whereNotIn('id', array_merge($existing_users, [1]));
             })
             ->latest('id')
-            ->get(['id', 'first_name', 'last_name', 'email']);
+            ->get(['id', 'first_name', 'last_name', 'username', 'email']);
     }
 }

@@ -22,7 +22,7 @@ use Spatie\Activitylog\Traits\LogsActivity;
 class User extends BaseUser implements HasLocalePreference
 {
     protected static $logAttributes = [
-        'first_name', 'last_name', 'email'
+        'first_name', 'last_name', 'username', 'email'
     ];
 
     use UserAttribute,

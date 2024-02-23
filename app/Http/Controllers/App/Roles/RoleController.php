@@ -102,7 +102,7 @@ class RoleController extends Controller
     public function getUsersByRole(Role $role){
 
         return $this->service
-            ->with('users:id,first_name,last_name,email','users.profilePicture')
+            ->with('users:id,first_name,last_name,username,email','users.profilePicture')
             ->orderBy('id')
             ->where('id', $role->id)
             ->first();

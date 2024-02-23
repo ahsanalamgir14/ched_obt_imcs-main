@@ -16,6 +16,7 @@ class UserRegistrationRequest extends BaseRequest
     {
         return [
             'first_name' => 'required|min:2',
+            'username' => 'required||unique:users,username|min:2',
             'email' => 'required|email|unique:users,email',
             'password' => ['required', 'confirmed', 'regex:/^(?=[^\d]*\d)(?=[A-Z\d ]*[^A-Z\d ]).{8,}$/i']
         ];

@@ -42,7 +42,7 @@ class UserRegistrationController extends Controller
                     'status_id' => resolve(StatusRepository::class)->userInactive(),
                     'remember_token' => $remember_token,
                 ])
-                ->assignRole('Moderator');
+                ->assignRole('STUDENT');
 
             try {
                 Mail::to($request->email)

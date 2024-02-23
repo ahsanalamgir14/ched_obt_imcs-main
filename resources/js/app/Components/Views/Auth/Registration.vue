@@ -23,10 +23,10 @@
                         </div>
                         <div class="form-row">
                             <div class="form-group col-12">
-                                <label for="user_first_name">{{ $t('first_name') }}</label>
+                                <label for="user_first_name">{{ $t('Name') }}</label>
                                 <app-input type="text"
                                            v-model="user.first_name"
-                                           :placeholder="$t('enter_first_name')"
+                                           :placeholder="$t('Enter your name')"
                                            :required="true"
                                 />
                             </div>
@@ -34,10 +34,10 @@
 
                         <div class="form-row">
                             <div class="form-group col-12">
-                                <label for="user_last_name">{{ $t('last_name') }}</label>
+                                <label for="username">{{ $t('Username') }}</label>
                                 <app-input type="text"
-                                           v-model="user.last_name"
-                                           :placeholder="$t('enter_last_name')"
+                                           v-model="user.username"
+                                           :placeholder="$t('Enter your username')"
                                            :required="true"
                                 />
                             </div>

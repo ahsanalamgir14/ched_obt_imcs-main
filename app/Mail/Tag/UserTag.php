@@ -52,6 +52,8 @@ class UserTag extends Tag
         return array_merge([
             '{action_by}' => $this->notifier->full_name,
             '{receiver_name}' => $this->user->full_name,
+            '{email}' => $this->user->email,
+            '{password}' => $this->user->temp_password,
             '{invitation_url}' => URL::signedRoute('user-invite.index', [
                 'invitation_token' => $this->user->invitation_token
             ]),

@@ -29,6 +29,8 @@ abstract class BaseUser extends Authenticatable
         'username',
         'email',
         'password',
+        'temp_password',
+        'initial_login',
         'active',
         'last_login_at',
         'created_by',

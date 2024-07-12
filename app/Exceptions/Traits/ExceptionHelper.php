@@ -21,14 +21,14 @@ trait ExceptionHelper
                 $message = $this->{$methodName}($request, $exception);
             }
 
-            if ($exception instanceof QueryException){
-                return response()->json(['status' => false, 'message' => $message], 424);
-            }
+            // if ($exception instanceof QueryException){
+            //     return response()->json(['status' => false, 'message' => $message], 424);
+            // }
 
-            if ($exception instanceof ModelNotFoundException) {
-                $message = trans('default.resource_not_found', ['resource' => trans('default.resource')]);
-                return response()->json(['status' => false, 'message' => $message], 404);
-            }
+            // if ($exception instanceof ModelNotFoundException) {
+            //     $message = trans('default.resource_not_found', ['resource' => trans('default.resource')]);
+            //     return response()->json(['status' => false, 'message' => $message], 404);
+            // }
 
             if ($exception instanceof Swift_TransportException) {
                 return response()->json(['status' => false, 'message' => __t('incorrect_delivery_credential')], 403);

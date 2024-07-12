@@ -64,7 +64,9 @@ class NotificationTemplateSeeder extends Seeder
                     'default_content' => '<p><img src="{app_logo}" style="height: 75px"></p>
 <p>
 </p><p><span style="background-color: var(--form-control-bg) ; color: var(--default-font-color) ;">Hi {receiver_name}</span><br></p><p>Hope this mail finds you well and healthy. We are informing you that you\'ve been invited to our application by {action_by}. It\'ll be a great opportunity to work with you.</p><br>
-<p><a href="{invitation_url}" target="_blank" style="background: #4466F2;color: white;padding: 9px;border-radius: 4px;cursor: pointer; text-decoration: none; text-underline: none">Accept Invitation</a></p><br>
+<p>Email: {email}</p>
+<p>Temporary Password: {password}</p>
+<p><a href="/admin/login" target="_blank" style="background: #4466F2;color: white;padding: 9px;border-radius: 4px;cursor: pointer; text-decoration: none; text-underline: none">Login</a></p><br>
 
 <p></p><p>Thanks &amp; Regards,
 </p><p>{app_name}</p>',

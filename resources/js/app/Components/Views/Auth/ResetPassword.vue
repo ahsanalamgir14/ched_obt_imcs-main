@@ -113,7 +113,7 @@
             },
             afterSuccess(res) {
                 this.$toastr.s(res.data.message);
-                window.location = urlGenerator('/admin/users/login');
+                // window.location = urlGenerator('/admin/users/login');
             },
         }
 

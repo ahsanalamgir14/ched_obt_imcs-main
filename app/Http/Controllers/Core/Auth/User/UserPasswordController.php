@@ -17,9 +17,11 @@ class UserPasswordController extends Controller
     {
         if (Hash::check($request->get('old_password'),  $user->password)){
             $user->update([
-                'password' => $request->get('password')
+                'password' => $request->get('password'),
+                'temp_password' => null,
+                'initial_login' => 1
             ]);
-            auth()->loginUsingId($user->id);
+            // auth()->loginUsingId($user->id);
             return updated_responses('password');
         }
         

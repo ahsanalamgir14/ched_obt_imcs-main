@@ -21,11 +21,14 @@ class UserConfirmController extends Controller
 
     public function index()
     {
+
+        // dd('I am here');
         $token = str_replace('}', '', \request()->invitation_token);
 
         $user = $this->service->with('status')->where('invitation_token', $token)->first();
 
         if ($user && optional($user->status)->name == 'status_invited') {
+            // dd($user);
             return view('frontend.user.invitation_confirm', array_merge(['user' => $user], $this->getReCaptcha()));
         }
 

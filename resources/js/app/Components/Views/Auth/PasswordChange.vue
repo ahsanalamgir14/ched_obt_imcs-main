@@ -106,7 +106,8 @@
             },
             afterSuccess(res) {
                 this.$toastr.s(res.data.message);
-                window.location = urlGenerator(actions.LOGOUT);
+                window.location = urlGenerator('/admin/dashboard');
+                // window.location = urlGenerator(actions.LOGOUT);
             },
             afterError(res) {
                 this.errors = res.data.errors;

@@ -83,7 +83,7 @@
             all_tags() {
                 const tags = Object.keys(this.tags).filter(tag => {
                     if ('user_invitation' === this.notificationEventName) {
-                        return ['{app_logo}','{action_by}', '{app_name}', '{receiver_name}', '{invitation_url}'].includes(tag)
+                        return ['{app_logo}','{action_by}', '{app_name}', '{receiver_name}', '{invitation_url}', '{email}', '{password}'].includes(tag)
                     }else if('password_reset' === this.notificationEventName) {
                         return ['{name}','{app_logo}', '{app_name}', '{receiver_name}', '{reset_password_url}'].includes(tag)
                     }else {
